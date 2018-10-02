@@ -1,2 +1,2 @@
 # Подключаемые библиотеки
-*Font Awesome
+* Font Awesome
