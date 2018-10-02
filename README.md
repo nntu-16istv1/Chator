@@ -1,2 +1,2 @@
-# Chator
-Messages and files system
+# Чатор 
+## Система обмена сообщениями и файлами
