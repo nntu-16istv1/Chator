@@ -56,13 +56,23 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 
+}
+
+#header-content .logo,
+#header-content .search,
+#header-content .user-info {
+  margin: 3px 0;
+}
+
+#header-content .logo {
+  flex-grow: 1;
 }
 
 #header-content .logo a {
@@ -75,6 +85,11 @@ body {
 #header-content .logo img {
   width: auto;
   height: 100%;
+}
+
+#header-content .search {
+  flex-grow: 1;
+  max-width: 310px;
 }
 
 #header-content .search form {
@@ -131,8 +146,10 @@ body {
 }
 
 #header-content .user-info {
+  flex-grow: 1;
   font-size: 1.5rem;
   padding-right: 14px;
+  text-align: right;
 }
 
 #header-content .user-info .logout::after {
@@ -220,7 +237,7 @@ body {
           flex-direction: column;
   -ms-flex-preferred-size: calc(100% - 226px);
   flex-basis: calc(100% - 226px);
-  min-width: 400px;
+  min-width: 70%;
   margin: 0 8px 0;
 }
 
@@ -646,5 +663,28 @@ body {
 @media all and (min-width: 801px) {
   html {
       font-size: 62.5%;
+  }
+}
+
+/**
+ * Help Media Query
+ */
+
+@media all and (max-width: 680px) {
+  #header-content .logo,
+  #header-content .search,
+  #header-content .user-info {
+    width: 100%;
+    text-align: center;
+  }
+  #header-content .user-info {
+    order: 1;
+  }
+  #header-content .logo {
+    order: 2;
+    padding-right: 42px;
+  }
+  #header-content .search {
+    order: 3;
   }
 }
