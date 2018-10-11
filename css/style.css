@@ -9,7 +9,8 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -86,7 +87,8 @@ body {
 #header-content .user-info {
   margin: 3px 0;
   max-height: 100%; /* for IE11 */
-  box-sizing: border-box; /* for IE11 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* for IE11 */
 }
 
 #header-content .logo {
@@ -527,12 +529,13 @@ body {
 }
 
 #login {
-  max-width: 420px;
+
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .35);
           box-shadow: 0 0 10px rgba(0, 0, , .35);
   font-size: 1.6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: calc(100% - 10px);
   margin: 5px;
 }
 
@@ -595,6 +598,7 @@ body {
 #login-container {
   padding: 25px;
   background-color: #ebebeb;
+  max-width: 470px;
 }
 
 #login h1 {
