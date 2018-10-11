@@ -457,7 +457,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 #content-main #answer input[type='submit']:hover {
@@ -466,6 +466,10 @@ body {
 
 #content-main #answer input[type='submit']:focus {
   border-color: #05a;
+}
+
+#content-main #answer input[type='file'] {
+  border: 0;
 }
 
 #menu {
