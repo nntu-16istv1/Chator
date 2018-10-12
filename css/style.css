@@ -376,8 +376,8 @@ body {
 #content-main #messages .message .flex-container .author,
 #content-main #messages .message .flex-container .date {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; 
+	  -ms-flex: 1 100% auto;
+	 	  flex: 1 100% auto;
 }
 
 #content-main #messages .message.left {
@@ -497,6 +497,54 @@ body {
 
 #content-main #answer input[type='file'] {
   border: 0;
+}
+
+#pagination {
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 8px;
+}
+#pagination a {
+  margin: 0 5px;
+  display: inline-block;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1.7rem;
+  background-color: #fff;
+  color: #000;
+  outline: medium none;
+}
+#pagination a::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+#pagination a:hover {
+  color: #fff;
+  background-color: #28d;
+}
+#pagination span {
+  font-size: 1.6rem;
+  color: #eee;
+}
+#pagination .arrow {
+  color: #000;
+}
+#pagination  a:hover .arrow {
+  border-color: #fff;
+  color: #fff;
+}
+#pagination .left {
+
+}
+#pagination .right {
+
+}
+#pagination .current {
+  background-color: #17c;
+  color: #ffffff;
 }
 
 #menu {
