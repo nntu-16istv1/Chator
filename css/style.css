@@ -126,6 +126,9 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   font-size: 0;
+  -webkit-box-pack: center;
+	 -ms-flex-pack: center;
+   justify-content: center;
 }
 
 #header-content .search form > .textbox,
@@ -137,13 +140,14 @@ body {
 #header-content .search form > .textbox {
   float: left;
   outline: 0;
-  width: calc(100% - 78px);
+  width: 100%;
   padding: 8px 16px;
   color: #212121;
   background-color: #fff;
   border: 1px solid #888;
   border-right: 0;
   border-radius: 3px 0 0 3px;
+  max-width: 210px;
 }
 
 #header-content .search form > .textbox:focus {
@@ -420,6 +424,25 @@ body {
   margin-bottom: 8px;
 }
 
+#content-main #answer .center {
+  text-align: center;
+}
+
+#content-main #answer .file-upload {
+  display: block;
+}
+
+#content-main #answer .file-upload i {
+  font-style: normal;
+  cursor: pointer;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+#content-main #answer .file-upload i:hover {
+  color: #17c;
+}
+
 #content-main #answer p {
   padding-bottom: 10px;
 }
@@ -432,6 +455,7 @@ body {
 
 #content-main #answer textarea {
   display: block;
+  font-family: 'Segoe UI', 'Sans-serif', 'Arial'; 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -441,8 +465,9 @@ body {
   border-color: #888;
   outline: 0;
   padding: 8px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.2;
+  overflow: auto;
 }
 
 #content-main #answer textarea:focus {
@@ -456,8 +481,10 @@ body {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  padding: 10px;
-  font-size: 1.5rem;
+  padding: 10px 14px;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 #content-main #answer input[type='submit']:hover {
@@ -533,7 +560,6 @@ body {
 }
 
 #login {
-
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .35);
           box-shadow: 0 0 10px rgba(0, 0, , .35);
   font-size: 1.6rem;
@@ -714,12 +740,12 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    padding-right: 0;
   }
   #header-content .logo {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding-right: 42px;
   }
   #header-content .search {
     -webkit-box-ordinal-group: 4;
