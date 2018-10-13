@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!-- {% header %} -->
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная | Чатор</title>
+    <title>{% pageName %} | Чатор</title>
     <link rel="stylesheet" href="lib/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -24,7 +25,7 @@
           </div>
           <div class="user-info">
             <span class="user">
-              <b>Пользователь</b>
+              <b>{% username %}</b>
             </span>
             <span class="logout">
               <a href="#logout">Выйти?</a>
@@ -53,12 +54,14 @@
           </li>
           <li class="menu-item">
             <a href="#m3">
-              Ещё какой-нибудь пункт?
+              {% menuItem %}
             </a>
           </li>
         </ul>
       </div>
     </div>
+    <!-- {% endHeader %} -->
+    <!-- {% content %} -->
     <div id="content" class="flex-center">
       <div class="wrapper">
         <div id="content-main">
@@ -69,7 +72,7 @@
               </div>
               <div class="groups-list">
                 <div class="group">
-                    <a href="#g1">Группа 1</a>
+                    <a href="#g1">{% myGroupName %}</a>
                 </div>
                 <div class="group">
                     <a href="#g2">Группа 2</a>
@@ -91,7 +94,7 @@
               </div>
               <div class="groups-list">
                 <div class="group">
-                    <a href="#g1">Группа 1</a>
+                    <a href="#g1">{% groupName %}</a>
                 </div>
                 <div class="group">
                     <a href="#g2">Группа 2</a>
@@ -124,7 +127,7 @@
             </div>
           </div>
           <div id="right-panel">
-            <h1 class="title">Группа 1</h1>
+            <h1 class="title">{% groupName %}</h1>
             <div id="messages">
               <div class="message">
                 <div class="flex-container">
@@ -138,11 +141,11 @@
               </div>
               <div class="message left">
                 <p>
-                  С другой стороны постоянный количественный рост и сфера нашей активности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Равным образом постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации систем массового участия.
+                  {% messageBody %}
                 </p>
                 <div class="flex-container">
-                  <div class="author">Я</div>
-                  <div class="date">25 сентября 2018 в 10:05</div>
+                  <div class="author">{% messageAuthor %}</div>
+                  <div class="date">{% messageDate %}</div>
                 </div>
               </div>
               <div class="message right">
@@ -198,10 +201,13 @@
         </div>   
       </div> 
     </div>
+    <!-- {% endContent %} -->
+    <!-- {% footer %} -->
     <div id="footer">
       <div class="wrapper">
         Чатор © 2018
       </div>
     </div>
+    <!-- {% endFooter %} -->
   </body>
 </html>
