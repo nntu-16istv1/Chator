@@ -318,6 +318,8 @@ body {
   border-left-color: #17c;
 }
 
+/* В группе */
+
 #content-main #messages {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -429,7 +431,7 @@ body {
 }
 
 #content-main #answer .file-upload {
-  display: block;
+  display: inline-block;
 }
 
 #content-main #answer .file-upload i {
@@ -499,6 +501,68 @@ body {
   border: 0;
 }
 
+/* Поиск групп */
+#content-main #groups {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; 
+  font-size: 1.6rem;
+  max-width: 100%;
+}
+
+#content-main #groups .group {
+  background-color: #fff;
+  padding: 10px 14px 0;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+#content-main #groups .info .name {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: #fff;
+  padding-bottom: 6px;
+}
+
+#content-main #groups .info .participants {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 6px;
+}
+
+#content-main #groups .text {
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+#content-main #groups .action {
+  text-align: center;
+}
+
+#content-main #groups .action .button {
+  display: inline-block;
+  background-color: #28d;
+  border-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 18px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+#content-main #groups .action .button:hover {
+  background-color: #17c;
+}
+
+/* Создание / Редактирование настроек группы */
+
+
+/* Вход в группу */
+
+
 #pagination {
   text-align: center;
   font-size: 0;
@@ -516,9 +580,6 @@ body {
   outline: medium none;
   margin: 0 3px 4px;
 }
-
-
-
 
 #pagination a::before {
   content: '';

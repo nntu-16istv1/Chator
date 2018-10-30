@@ -6,3 +6,7 @@
 * auth.html - Идентификации
 * auth-err.html - Идентификация с ошибками
 * group.html - Активная группа
+* groups.html - Поиск групп
+* group-join.html - Вход в группу
+* group-settings.html - Настройки группы
+
