@@ -558,10 +558,91 @@ body {
 }
 
 /* Создание / Редактирование настроек группы */
-
+#content-main #group-settings {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; 
+  font-size: 1.6rem;
+  max-width: 100%;
+  margin-bottom: 8px;
+}
 
 /* Вход в группу */
+#content-main #group-join {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; 
+  font-size: 1.6rem;
+  max-width: 100%;
+  margin-bottom: 8px;
+}
 
+/* Общие стили элементов форм */
+#content-main .form {
+  background-color: #fff;
+  padding: 10px 14px 0;
+}
+
+#content-main .form textarea,
+#content-main .form input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #888;
+}
+
+#content-main .form textarea:focus,
+#content-main .form input:focus {
+  border-color: #000;
+  color: #000;
+}
+
+#content-main .form p {
+  padding-bottom: 10px;
+}
+
+#content-main .form .button {
+  display: inline-block;
+  background-color: #28d;
+  border-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 18px;
+  font-size: 1.6rem;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+
+#content-main .form .button:focus {
+  color: #fff;
+}
+
+#content-main .form .input {
+  display: block;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  width: 100%;
+  margin-top: 4px;
+  outline: 0;
+}
+
+#content-main .form .mult-input {
+  display: block;
+  font-family: 'Segoe UI', 'Sans-serif', 'Arial';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-height: 80px;
+  background-color: #fff;
+  outline: 0;
+  padding: 8px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  overflow: auto;
+}
 
 #pagination {
   text-align: center;
