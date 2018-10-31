@@ -87,7 +87,7 @@
             </div>
             <div class="all-groups">
               <div class="title">
-                  Все группы
+                  Активные группы
               </div>
               <div class="groups-list">
                 <div class="group">
@@ -126,32 +126,59 @@
           <div id="right-panel">
             <div id="group-settings">
               <div class="title">
-                Группа 1
+                Параметры группы
               </div>
               <div class="form">
                 <form action="" method="POST">
                   <input name="groupID" type="hidden" value="1">
-                  <p>
-                    <label>
-                      Пароль для входа:<br>
-                      <input name="password" type="password" value="secret" placeholder="Введите пароль..." class="input">
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Длина сообщения:<br>
-                      <input name="length" type="number" value="10" min="3" max="10" class="input">
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Описание группы:<br>
-                      <textarea name="description" placeholder="Введите описание группы..." class="mult-input"></textarea>
-                    </label>
-                  </p>
-                  <p>
-                    <input name="send" type="submit" value="Создать / Редактировать" class="button">
-                  </p>
+                  	<div class="row">
+                  		<div class="fname">
+                    		<label for="gname">
+                    			Название группы:            
+                    		</label>
+               			</div>
+               			<div class="field">
+                    		<input name="group name" type="text"  placeholder="Введите название..." id="gname">
+                		</div>
+                 	</div>
+                 	<div class="row">
+                  		<div class="fname">
+                    		<label for="password">
+                    			Пароль для входа:              
+                    		</label>
+               			</div>
+               			<div class="field">
+                    		<input name="password" type="password" value="secret" placeholder="Введите пароль..." id="password">
+                		</div>
+                 	</div>
+                  	<div class="row">
+                  		<div class="fname">
+                    		<label for="theme">
+                    			Тема группы:             
+                    		</label>
+               			</div>
+               			<div class="field">
+                    		<input name="theme of group" type="text"  placeholder="Введите тему..." id="theme">
+                		</div>
+                 	</div>                 	
+                  	<div class="row">
+                  		<div class="fname">
+                    		<label>
+                    			Длина сообщения:
+                    		</label>
+                    	</div>
+                    	<div class="field">
+                     	<input name="length" type="number" value="148" min="60" max="500">
+                    	</div>
+                  	</div>
+                  	<div id="descripton">
+                    	<label>                    		Описание группы:
+                    	</label>
+                      	<textarea name="description" placeholder="Введите описание группы..." class="mult-input"></textarea>
+                  	</div>
+                  	<div>
+                    <input name="send" type="submit" value="Сохранить" class="button">
+                  	</div>
                 </form>
               </div>
             </div>

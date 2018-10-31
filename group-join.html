@@ -87,7 +87,7 @@
             </div>
             <div class="all-groups">
               <div class="title">
-                  Все группы
+                  Активные группы
               </div>
               <div class="groups-list">
                 <div class="group">
@@ -126,20 +126,24 @@
           <div id="right-panel">
             <div id="group-join">
               <div class="title">
-                Группа 1
+                Название группы
               </div>
               <div class="form">
                 <form action="" method="POST">
                   <input name="groupID" type="hidden" value="1">
-                  <p>
-                    <label>
-                      Введите пароль группы:<br>
-                      <input name="password" type="password" value="secret" placeholder="Введите пароль..." class="input">
-                    </label>
-                  </p>
-                  <p>
+                  <div class="row">
+                    <div class="fname">
+                      <label>
+                        Введите пароль группы:
+                      </label>
+                    </div>
+                    <div class="field">
+                      <input name="password" type="password" value="secret" placeholder="Введите пароль...">
+                    </div>
+                  </div>
+                  <div>
                     <input name="send" type="submit" value="Войти" class="button">
-                  </p>
+                  </div>
                 </form>
               </div>
             </div>

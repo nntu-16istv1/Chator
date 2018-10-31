@@ -512,33 +512,52 @@ body {
 
 #content-main #groups .group {
   background-color: #fff;
-  padding: 10px 14px 0;
+  padding: 10px 20px;
   margin-bottom: 8px;
   word-wrap: break-word;
+  display: flex;
+  justify-content: space-between;
+  height: 18rem;
+}
+
+#content-main #groups .info{
+  flex-basis: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #content-main #groups .info .name {
-  text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: bold;
   background-color: #fff;
-  padding-bottom: 6px;
+  padding:8px 0;
 }
 
 #content-main #groups .info .participants {
-  text-align: center;
   font-size: 1.5rem;
   padding-bottom: 6px;
 }
 
-#content-main #groups .text {
-  text-align: justify;
-  margin-bottom: 8px;
+#content-main #groups .description {
+  flex-basis: 300px;  
+  margin:8px;  
+  overflow: hidden;
+  text-align: center;  
 }
 
-#content-main #groups .action {
-  text-align: center;
+#content-main #groups .description label{
+    font-weight: bold; 
 }
+
+#content-main #groups .description #text{
+  height: 100%;
+  text-align: justify;
+  overflow: scroll;
+}
+/*#content-main #groups .action {
+  text-align: center;
+}*/
 
 #content-main #groups .action .button {
   display: inline-block;
@@ -601,6 +620,8 @@ body {
 }
 
 #content-main .form .button {
+  width:25%;
+  min-width: 100px;
   display: inline-block;
   background-color: #28d;
   border-color: transparent;
@@ -609,7 +630,7 @@ body {
   cursor: pointer;
   padding: 10px 18px;
   font-size: 1.6rem;
-  margin-bottom: 2px;
+  margin:4px 0 14px 0;
   text-decoration: none;
 }
 
@@ -617,14 +638,35 @@ body {
   color: #fff;
 }
 
-#content-main .form .input {
+#content-main .form .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0;
+  align-items: stretch;
+}
+
+#content-main .form .fname{
+  flex-basis: 200px;   
+}
+
+#content-main .form  label{
+  display: inline-block;
+  padding: 8px 0;
+}
+
+#content-main .form .field{
+  flex-grow: 3;  
+  flex-basis: 200px;
+}
+
+#content-main .form input {
   display: block;
   padding: 8px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.6rem;
-  width: 100%;
-  margin-top: 4px;
+  width: 100%;  
+  margin-right: 0; 
   outline: 0;
 }
 
