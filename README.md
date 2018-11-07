@@ -8,7 +8,8 @@
 * group.html - Активная группа
 * group-err.html - Активная группа с ошибками
 * groups.html - Поиск групп
-* groups-err.html - Поиск групп с ошибками 
+* groups-err.html - Поиск групп с ошибками
+* groups-empty.html - Группы не найдены
 * group-join.html - Вход в группу
 * group-join-err.html - Вход в группу с ошибками 
 * group-settings.html - Настройки группы
