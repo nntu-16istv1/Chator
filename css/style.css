@@ -58,6 +58,21 @@ body {
   margin: 0 auto;
 }
 
+.errors {
+  color: #ff0000;
+}
+
+#content-main #groups .action .errors {
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+#content-main #answer textarea.error,
+#content-main .form input.error,
+#content-main .form textarea.error {
+  border-color: #ff0000;
+}
+
 #header {
   background-color: #fff;
   padding: 3px 0;
@@ -127,7 +142,7 @@ body {
           align-items: stretch;
   font-size: 0;
   -webkit-box-pack: center;
-	 -ms-flex-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
 }
 
@@ -268,7 +283,7 @@ body {
   -ms-flex-preferred-size: calc(100% - 226px);
   flex-basis: calc(100% - 226px);
   min-width: 70%;
-  margin: 0 8px 0;
+  margin: 0 0 0 8px;
 }
 
 #content-main .title {
@@ -378,8 +393,8 @@ body {
 #content-main #messages .message .flex-container .author,
 #content-main #messages .message .flex-container .date {
   -webkit-box-flex: 1;
-	  -ms-flex: 1 100% auto;
-	 	  flex: 1 100% auto;
+    -ms-flex: 1 100% auto;
+      flex: 1 100% auto;
 }
 
 #content-main #messages .message.left {
@@ -515,16 +530,29 @@ body {
   padding: 10px 20px;
   margin-bottom: 8px;
   word-wrap: break-word;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  height: 18rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  height: 210px;
 }
 
-#content-main #groups .info{
-  flex-basis: 200;
+#content-main #groups .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(30% - 16px);
 }
 
 #content-main #groups .info .name {
@@ -535,29 +563,30 @@ body {
 }
 
 #content-main #groups .info .participants {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   font-size: 1.5rem;
   padding-bottom: 6px;
 }
 
 #content-main #groups .description {
-  flex-basis: 300px;  
-  margin:8px;  
-  overflow: hidden;
+  margin: 8px;  
   text-align: center;  
+  width: 60%;
 }
 
-#content-main #groups .description label{
+#content-main #groups .description label {
     font-weight: bold; 
 }
 
-#content-main #groups .description #text{
-  height: 100%;
+#content-main #groups .description #text {
+  height: 90%;
   text-align: justify;
-  overflow: scroll;
+  overflow-y: scroll;
+  padding: 0 8px;
+  margin: 4px 0;
 }
-/*#content-main #groups .action {
-  text-align: center;
-}*/
 
 #content-main #groups .action .button {
   display: inline-block;
@@ -568,7 +597,6 @@ body {
   cursor: pointer;
   padding: 10px 18px;
   font-size: 1.6rem;
-  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -630,8 +658,12 @@ body {
   cursor: pointer;
   padding: 10px 18px;
   font-size: 1.6rem;
-  margin:4px 0 14px 0;
+  margin: 10px 0 14px 0;
   text-decoration: none;
+}
+
+#content-main .form .button:hover {
+  background-color: #17c;
 }
 
 #content-main .form .button:focus {
@@ -639,24 +671,33 @@ body {
 }
 
 #content-main .form .row{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 8px 0;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
-#content-main .form .fname{
-  flex-basis: 200px;   
+#content-main .form .fname {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;   
 }
 
-#content-main .form  label{
+#content-main .form  label {
   display: inline-block;
   padding: 8px 0;
 }
 
-#content-main .form .field{
-  flex-grow: 3;  
-  flex-basis: 200px;
+#content-main .form .field {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;  
+  -ms-flex-preferred-size: 200px;  
+      flex-basis: 200px;
 }
 
 #content-main .form input {
@@ -736,9 +777,12 @@ body {
 }
 
 #menu {
-  background-color: #fff;
   min-height: auto;
   margin-bottom: 8px;
+}
+
+#menu .wrapper {
+  background-color: #fff;
 }
 
 #menu #main-menu {
@@ -929,10 +973,7 @@ body {
   border-color: #05a;
 }
 
-#login .errors {
-  margin-top: 8px;
-  color: #ff0000;
-}
+
 
 /**
  * Mobile
@@ -964,7 +1005,6 @@ body {
 /**
  * Help Media Query
  */
-
 @media all and (max-width: 680px) {
   #header-content .logo,
   #header-content .search,
@@ -987,5 +1027,11 @@ body {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+}
+
+@media all and (max-width: 750px) {
+  #content-main #right-panel {
+    margin: 0 8px 0;
   }
 }

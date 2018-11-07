@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход в группу | Чатор</title>
+    <title>Настройки группы | Чатор</title>
     <link rel="stylesheet" href="lib/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -124,26 +124,77 @@
             </div>
           </div>
           <div id="right-panel">
-            <div id="group-join">
+            <div id="group-settings">
               <div class="title">
-                Название группы
+                Параметры группы
               </div>
               <div class="form">
                 <form action="" method="POST">
                   <input name="groupID" type="hidden" value="1">
-                  <div class="row">
-                    <div class="fname">
-                      <label for="password">
-                        Введите пароль группы:
-                      </label>
-                    </div>
-                    <div class="field">
-                      <input id="password" name="password" type="password" value="secret" placeholder="Введите пароль...">
-                    </div>
-                  </div>
-                  <div>
-                    <input name="send" type="submit" value="Войти" class="button">
-                  </div>
+                  	<div class="row">
+                  		<div class="fname">
+                    		<label for="gname">
+                    			Название группы:            
+                    		</label>
+               			</div>
+               			<div class="field">
+                    		<input id="gname" class="error" name="groupname" type="text"  placeholder="Введите название...">
+                        <p class="errors">
+                          Ошибка в поле "Название группы".
+                        </p>
+                		</div>
+                 	</div>
+                 	<div class="row">
+                  		<div class="fname">
+                    		<label for="password">
+                    			Пароль для входа:              
+                    		</label>
+               			</div>
+               			<div class="field">
+                    		<input id="password" class="error" name="password" type="password" value="secret" placeholder="Введите пароль...">
+                        <p class="errors">
+                          Ошибка в поле "Пароль для входа".
+                        </p>
+                		</div>
+                 	</div>
+                  	<div class="row">
+                  		<div class="fname">
+                    		<label for="theme">
+                    			Тема группы:             
+                    		</label>
+               			</div>
+               			<div class="field">
+                    		<input id="theme" class="error" name="theme of group" type="text"  placeholder="Введите тему...">
+                        <p class="errors">
+                          Ошибка в поле "Тема группы".
+                        </p>
+                		</div>
+                 	</div>                 	
+                  	<div class="row">
+                  		<div class="fname" >
+                    		<label for="length">
+                    			Длина сообщения:
+                    		</label>
+                    	</div>
+                    	<div class="field">
+                     	  <input id="length" class="error" name="length" type="number" value="148" min="60" max="500">
+                        <p class="errors">
+                          Ошибка в поле "Длина сообщения".
+                        </p>
+                    	</div>
+                  	</div>
+                  	<div id="descripton">
+                    	<label for="description">
+                        Описание группы:
+                    	</label>
+                      <textarea id="description" name="description" placeholder="Введите описание группы..." class="mult-input error"></textarea>
+                      <p class="errors">
+                        Ошибка в поле "Описание группы".
+                      </p>
+                  	</div>
+                  	<div>
+                    <input name="send" type="submit" value="Сохранить" class="button">
+                  	</div>
                 </form>
               </div>
             </div>

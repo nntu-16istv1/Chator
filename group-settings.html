@@ -138,7 +138,7 @@
                     		</label>
                			</div>
                			<div class="field">
-                    		<input name="group name" type="text"  placeholder="Введите название..." id="gname">
+                    		<input id="gname" name="groupname" type="text"  placeholder="Введите название...">
                 		</div>
                  	</div>
                  	<div class="row">
@@ -148,7 +148,7 @@
                     		</label>
                			</div>
                			<div class="field">
-                    		<input name="password" type="password" value="secret" placeholder="Введите пароль..." id="password">
+                    		<input id="password" name="password" type="password" value="secret" placeholder="Введите пароль...">
                 		</div>
                  	</div>
                   	<div class="row">
@@ -158,23 +158,24 @@
                     		</label>
                			</div>
                			<div class="field">
-                    		<input name="theme of group" type="text"  placeholder="Введите тему..." id="theme">
+                    		<input id="theme" name="theme of group" type="text"  placeholder="Введите тему...">
                 		</div>
                  	</div>                 	
                   	<div class="row">
-                  		<div class="fname">
-                    		<label>
+                  		<div class="fname" >
+                    		<label for="length">
                     			Длина сообщения:
                     		</label>
                     	</div>
                     	<div class="field">
-                     	<input name="length" type="number" value="148" min="60" max="500">
+                     	  <input id="length" name="length" type="number" value="148" min="60" max="500" >
                     	</div>
                   	</div>
                   	<div id="descripton">
-                    	<label>                    		Описание группы:
+                    	<label for="description">
+                        Описание группы:
                     	</label>
-                      	<textarea name="description" placeholder="Введите описание группы..." class="mult-input"></textarea>
+                      	<textarea id="description" name="description" placeholder="Введите описание группы..." class="mult-input"></textarea>
                   	</div>
                   	<div>
                     <input name="send" type="submit" value="Сохранить" class="button">
