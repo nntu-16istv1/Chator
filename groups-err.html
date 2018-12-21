@@ -1,73 +1,93 @@
+<!-- begin-html -->
 <!DOCTYPE html>
 <html lang="ru">
+  <!-- begin-head -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- begin-title -->
     <title>Поиск групп | Чатор</title>
+    <!-- end-title -->
     <link rel="stylesheet" href="lib/fontawesome/css/solid.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <!-- end-head -->
+  <!-- begin-body -->
   <body>
+    <!-- begin-header -->
     <div id="header">
       <div class="wrapper">
         <div id="header-content">
+          <!-- begin-logo -->
           <div class="logo">
             <a href="#mm">
               <img src="img/logo.svg" alt="logo">
             </a>
           </div>
+          <!-- end-logo -->
+          <!-- begin-search -->
           <div class="search">
+            <!-- begin-form-search -->
             <form action="" method="POST">
               <input name="search-txt" type="text" placeholder="Поиск..." class="textbox">
               <input name="search-btn" type="submit" title="Поиск" value="&#xf002;" class="button fa fa-search fa-5x">
             </form>
+            <!-- end-form-search -->
           </div>
+          <!-- begin-user-info -->
           <div class="user-info">
             <span class="user">
+              <!-- begin-user -->
               <b>Пользователь</b>
+              <!-- end-user -->
             </span>
             <span class="logout">
+              <!-- begin-logout -->
               <a href="#logout">Выйти?</a>
+              <!-- end-logout -->
             </span>
           </div>
+          <!-- end-user-info -->
         </div>
       </div>
     </div>
+    <!-- end-header -->
+    <!-- begin-menu -->
     <div id="menu">
       <div class="wrapper">
         <ul id="main-menu">
+          <!-- begin-main-menu -->
           <li class="menu-item">
             <a href="#m1">
               Создать группу
             </a>
-          </li>
+          </li>          
           <li class="menu-item">
             <a href="#m2">
-              Мои группы
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#m3">
               Все группы
             </a>
           </li>
-          <li class="menu-item">
-            <a href="#m3">
-              Ещё какой-нибудь пункт?
-            </a>
-          </li>
+          <!-- end-main-menu -->
         </ul>
       </div>
     </div>
+    <!-- end-menu -->
+    <!-- begin-content -->
     <div id="content" class="flex-center">
       <div class="wrapper">
         <div id="content-main">
+          <!-- begin-left-panel -->
           <div id="left-panel">
+            <!-- begin-my-groups -->
             <div class="my-groups">
+              <!-- begin-my-groups-title -->
               <div class="title">
                   Мои группы
               </div>
+              <!-- end-my-groups-title -->
+              <!-- begin-my-groups-list -->
               <div class="groups-list">
+                <!-- begin-my-group-lists -->
                 <div class="group">
                     <a href="#g1">Группа 1</a>
                 </div>
@@ -83,13 +103,21 @@
                 <div class="group">
                     <a href="#g5">Группа 5</a>
                 </div>
+                <!-- end-my-group-lists -->
               </div> 
+              <!-- end-my-groups-list -->
             </div>
+            <!-- end-my-groups -->
+            <!-- begin-all-groups -->
             <div class="all-groups">
+              <!-- begin-all-groups-title -->
               <div class="title">
                   Активные группы
               </div>
+              <!-- end-all-groups-title -->
+              <!-- begin-all-groups-list -->
               <div class="groups-list">
+                <!-- begin-all-group-lists -->
                 <div class="group">
                     <a href="#g1">Группа 1</a>
                 </div>
@@ -120,11 +148,18 @@
                 <div class="group">
                     <a href="#g10">Группа 10</a>
                 </div>
+                <!-- end-all-group-lists -->
               </div>
+              <!-- end-all-groups-list -->
             </div>
+            <!-- end-all-groups -->
           </div>
+          <!-- end-left-panel -->
+          <!-- begin-right-panel -->
           <div id="right-panel">
+            <!-- begin-groups -->
             <div id="groups">
+              <!-- begin-groups-list -->
               <div class="group">
                 <div class="info">
                   <div class="name">
@@ -137,7 +172,9 @@
                     Кол-во участников: <b>10</b>
                   </div>
                   <div class="action">
+                    <!-- begin-group-errors -->
                     <span class="errors">Ошибка доступа. Обновите страницу.</span><br>
+                    <!-- end-group-errors -->
                     <a class="button" href="#join">Войти</a>
                   </div>
                 </div>
@@ -257,9 +294,13 @@
                     Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия.
                   </p>
                 </div>
-              </div>        
+              </div> 
+              <!-- end-groups-list -->       
             </div>
+            <!-- end-groups -->
+            <!-- begin-pagination -->
       			<div id="pagination">
+              <!-- begin-pagination-links -->
       				<a href="#">
       					<span class="arrow fa fa-arrow-left">&#xf060</span>
       				</a>
@@ -275,15 +316,25 @@
       				<a href="#">
       					<span class="arrow fa fa-arrow-right">&#xf061;</span>
       				</a>
+              <!-- end-pagination-links -->
       			</div>
-          </div>          
+            <!-- end-pagination -->
+          </div>   
+          <!-- end-right-panel -->       
         </div>   
       </div> 
     </div>
+    <!-- end-content -->
+    <!-- begin-footer -->
     <div id="footer">
       <div class="wrapper">
+        <!-- begin-footer-text -->
         Чатор © 2018
+        <!-- end-footer-text -->
       </div>
     </div>
+    <!-- end-footer -->
   </body>
+  <!-- end-body -->
 </html>
+<!-- end-html -->
