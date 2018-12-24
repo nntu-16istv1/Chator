@@ -1,340 +1,341 @@
 <!-- begin-html -->
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- begin-head -->
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- begin-title -->
-    <title>Поиск групп | Чатор</title>
-    <!-- end-title -->
-    <link rel="stylesheet" href="lib/fontawesome/css/solid.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <!-- end-head -->
-  <!-- begin-body -->
-  <body>
-    <!-- begin-header -->
-    <div id="header">
-      <div class="wrapper">
-        <div id="header-content">
-          <!-- begin-logo -->
-          <div class="logo">
-            <a href="#mm">
-              <img src="img/logo.svg" alt="logo">
-            </a>
-          </div>
-          <!-- end-logo -->
-          <!-- begin-search -->
-          <div class="search">
-            <!-- begin-form-search -->
-            <form action="" method="POST">
-              <input name="search-txt" type="text" placeholder="Поиск..." class="textbox">
-              <input name="search-btn" type="submit" title="Поиск" value="&#xf002;" class="button fa fa-search fa-5x">
-            </form>
-            <!-- end-form-search -->
-          </div>
-          <!-- begin-user-info -->
-          <div class="user-info">
-            <span class="user">
-              <!-- begin-user -->
-              <b>Пользователь</b>
-              <!-- end-user -->
-            </span>
-            <span class="logout">
-              <!-- begin-logout -->
-              <a href="#logout">Выйти?</a>
-              <!-- end-logout -->
-            </span>
-          </div>
-          <!-- end-user-info -->
+    <!-- begin-head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- begin-title -->
+        <title>Поиск групп | Чатор</title>
+        <!-- end-title -->
+        <link rel="stylesheet" href="lib/fontawesome/css/solid.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <!-- end-head -->
+    <!-- begin-body -->
+    <body>
+        <!-- begin-header -->
+        <div id="header">
+            <div class="wrapper">
+                <div id="header-content">
+                    <!-- begin-logo -->
+                    <div class="logo">
+                        <a href="#mm">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <!-- end-logo -->
+                    <!-- begin-search -->
+                    <div class="search">
+                        <!-- begin-form-search -->
+                        <form action="" method="POST">
+                            <input name="search-txt" type="text" placeholder="Поиск..." class="textbox">
+                            <input name="search-btn" type="submit" title="Поиск" value="&#xf002;" class="button fa fa-search fa-5x">
+                        </form>
+                        <!-- end-form-search -->
+                    </div>
+                    <!-- end-search -->
+                    <!-- begin-user-info -->
+                    <div class="user-info">
+                        <span class="user">
+                            <!-- begin-user -->
+                            <b>Пользователь</b>
+                            <!-- end-user -->
+                        </span>
+                        <span class="logout">
+                            <!-- begin-logout -->
+                            ( <a href="#logout">Выйти?</a> )
+                            <!-- end-logout -->
+                        </span>
+                    </div>
+                    <!-- end-user-info -->
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- end-header -->
-    <!-- begin-menu -->
-    <div id="menu">
-      <div class="wrapper">
-        <ul id="main-menu">
-          <!-- begin-main-menu -->
-          <li class="menu-item">
-            <a href="#m1">
-              Создать группу
-            </a>
-          </li>          
-          <li class="menu-item">
-            <a href="#m2">
-              Все группы
-            </a>
-          </li>
-          <!-- end-main-menu -->
-        </ul>
-      </div>
-    </div>
-    <!-- end-menu -->
-    <!-- begin-content -->
-    <div id="content" class="flex-center">
-      <div class="wrapper">
-        <div id="content-main">
-          <!-- begin-left-panel -->
-          <div id="left-panel">
-            <!-- begin-my-groups -->
-            <div class="my-groups">
-              <!-- begin-my-groups-title -->
-              <div class="title">
-                  Мои группы
-              </div>
-              <!-- end-my-groups-title -->
-              <!-- begin-my-groups-list -->
-              <div class="groups-list">
-                <!-- begin-my-group-lists -->
-                <div class="group">
-                    <a href="#g1">Группа 1</a>
-                </div>
-                <div class="group">
-                    <a href="#g2">Группа 2</a>
-                </div>
-                <div class="group">
-                    <a href="#g3">Группа 3</a>
-                </div>
-                <div class="group">
-                    <a href="#g4">Группа 4</a>
-                </div>
-                <div class="group">
-                    <a href="#g5">Группа 5</a>
-                </div>
-                <!-- end-my-group-lists -->
-              </div> 
-              <!-- end-my-groups-list -->
+        <!-- end-header -->
+        <!-- begin-menu -->
+        <div id="menu">
+            <div class="wrapper">
+                <ul id="main-menu">
+                    <!-- begin-main-menu -->
+                    <li class="menu-item">
+                        <a href="#m1">
+                            Создать группу
+                        </a>
+                    </li>          
+                    <li class="menu-item">
+                        <a href="#m2">
+                            Все группы
+                        </a>
+                    </li>
+                    <!-- end-main-menu -->
+                </ul>
             </div>
-            <!-- end-my-groups -->
-            <!-- begin-all-groups -->
-            <div class="all-groups">
-              <!-- begin-all-groups-title -->
-              <div class="title">
-                  Активные группы
-              </div>
-              <!-- end-all-groups-title -->
-              <!-- begin-all-groups-list -->
-              <div class="groups-list">
-                <!-- begin-all-group-lists -->
-                <div class="group">
-                    <a href="#g1">Группа 1</a>
-                </div>
-                <div class="group">
-                    <a href="#g2">Группа 2</a>
-                </div>
-                <div class="group">
-                    <a href="#g3">Группа 3</a>
-                </div>
-                <div class="group">
-                    <a href="#g4">Группа 4</a>
-                </div>
-                <div class="group">
-                    <a href="#g5">Группа 5</a>
-                </div>
-                <div class="group">
-                    <a href="#g6">Группа 6</a>
-                </div>
-                <div class="group">
-                    <a href="#g7">Группа 7</a>
-                </div>
-                <div class="group">
-                    <a href="#g8">Группа 8</a>
-                </div>
-                <div class="group">
-                    <a href="#g9">Группа 9</a>
-                </div>
-                <div class="group">
-                    <a href="#g10">Группа 10</a>
-                </div>
-                <!-- end-all-group-lists -->
-              </div>
-              <!-- end-all-groups-list -->
+        </div>
+        <!-- end-menu -->
+        <!-- begin-content -->
+        <div id="content" class="flex-center">
+            <div class="wrapper">
+                <div id="content-main">
+                    <!-- begin-left-panel -->
+                    <div id="left-panel">
+                        <!-- begin-my-groups -->
+                        <div class="my-groups">
+                            <!-- begin-my-groups-title -->
+                            <div class="title">
+                                Мои группы
+                            </div>
+                            <!-- end-my-groups-title -->
+                            <!-- begin-my-groups-list -->
+                            <div class="groups-list">
+                                <!-- begin-my-group-lists -->
+                                <div class="group">
+                                    <a href="#g1">Группа 1</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g2">Группа 2</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g3">Группа 3</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g4">Группа 4</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g5">Группа 5</a>
+                                </div>
+                                <!-- end-my-group-lists -->
+                            </div> 
+                            <!-- end-my-groups-list -->
+                        </div>
+                        <!-- end-my-groups -->
+                        <!-- begin-all-groups -->
+                        <div class="all-groups">
+                            <!-- begin-all-groups-title -->
+                            <div class="title">
+                                Активные группы
+                            </div>
+                            <!-- end-all-groups-title -->
+                            <!-- begin-all-groups-list -->
+                            <div class="groups-list">
+                                <!-- begin-all-group-lists -->
+                                <div class="group">
+                                    <a href="#g1">Группа 1</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g2">Группа 2</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g3">Группа 3</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g4">Группа 4</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g5">Группа 5</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g6">Группа 6</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g7">Группа 7</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g8">Группа 8</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g9">Группа 9</a>
+                                </div>
+                                <div class="group">
+                                    <a href="#g10">Группа 10</a>
+                                </div>
+                                <!-- end-all-group-lists -->
+                            </div>
+                            <!-- end-all-groups-list -->
+                        </div>
+                        <!-- end-all-groups -->
+                    </div>
+                    <!-- end-left-panel -->
+                    <!-- begin-right-panel -->
+                    <div id="right-panel">
+                        <!-- begin-groups -->
+                        <div id="groups">
+                            <!-- begin-groups-list -->
+                            <div class="group">
+                                <div class="info">
+                                    <div class="name">
+                                        Группа 1
+                                    </div>
+                                    <div class="theme">
+                                        Тема группы
+                                    </div>
+                                    <div class="participants">
+                                        Кол-во участников: <b>10</b>
+                                    </div>
+                                    <div class="action">
+                                        <!-- begin-group-errors -->
+                                        <span class="errors">Ошибка доступа. Обновите страницу.</span><br>
+                                        <!-- end-group-errors -->
+                                        <a class="button" href="#join">Войти</a>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <label for="text">Описание</label>
+                                    <p id="text">
+                                        Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Равным образом укрепление и развитие структуры требуют определения и уточнения модели развития. Не следует, однако забывать, что укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="info">
+                                    <div class="name">
+                                        Группа 2
+                                    </div>
+                                    <div class="theme">
+                                        Тема группы
+                                    </div>
+                                    <div class="participants">
+                                        Кол-во участников: <b>5</b>
+                                    </div>
+                                    <div class="action">
+                                        <a class="button" href="#join">Войти</a>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <label for="text">Описание</label>
+                                    <p id="text">
+                                        С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют от нас анализа существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение соответствующий условий активизации.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="info">
+                                    <div class="name">
+                                        Группа 3
+                                    </div>
+                                    <div class="theme">
+                                        Тема группы
+                                    </div>
+                                    <div class="participants">
+                                        Кол-во участников: <b>20</b>
+                                    </div>
+                                    <div class="action">
+                                        <a class="button" href="#join">Войти</a>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <label for="text">Описание</label>
+                                    <p id="text">
+                                        Товарищи! начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития. Задача организации, в особенности же укрепление и развитие структуры способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения и уточнения модели развития. Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Товарищи! новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="info">
+                                    <div class="name">
+                                        Группа 4
+                                    </div>
+                                    <div class="theme">
+                                        Тема группы
+                                    </div>
+                                    <div class="participants">
+                                        Кол-во участников: <b>35</b>
+                                    </div>
+                                    <div class="action">
+                                        <a class="button" href="#join">Войти</a>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <label for="text">Описание</label>
+                                    <p id="text">
+                                        Разнообразный и богатый опыт начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки соответствующий условий активизации. Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Равным образом консультация с широким активом позволяет оценить значение форм развития. Таким образом начало повседневной работы по формированию позиции требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="info">
+                                    <div class="name">
+                                        Группа 5
+                                    </div>
+                                    <div class="theme">
+                                        Тема группы
+                                    </div>
+                                    <div class="participants">
+                                        Кол-во участников: <b>50</b>
+                                    </div>
+                                    <div class="action">
+                                        <a class="button" href="#join">Войти</a>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <label for="text">Описание</label>
+                                    <p id="text">
+                                        С другой стороны укрепление и развитие структуры позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="info">
+                                    <div class="name">
+                                        Группа 6
+                                    </div>
+                                    <div class="theme">
+                                        Тема группы
+                                    </div>
+                                    <div class="participants">
+                                        Кол-во участников: <b>100500</b>
+                                    </div>
+                                    <div class="action">
+                                        <a class="button" href="#join">Войти</a>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <label for="text">Описание</label>
+                                    <p id="text">
+                                        Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия.
+                                    </p>
+                                </div>
+                            </div> 
+                            <!-- end-groups-list -->       
+                        </div>
+                        <!-- end-groups -->
+                        <!-- begin-pagination -->
+                        <div id="pagination">
+                            <!-- begin-pagination-links -->
+                            <a href="#">
+                                <span class="arrow fa fa-arrow-left">&#xf060</span>
+                            </a>
+                            <a href="#">
+                                1
+                            </a>
+                            <span>...</span>
+                            <a href="#" class="middle">4</a>
+                            <a href="#" class="middle current">5</a>
+                            <a href="#" class="middle">6</a>
+                            <span>...</span>
+                            <a href="#">9</a>
+                            <a href="#">
+                                <span class="arrow fa fa-arrow-right">&#xf061;</span>
+                            </a>
+                            <!-- end-pagination-links -->
+                        </div>
+                        <!-- end-pagination -->
+                    </div>   
+                    <!-- end-right-panel -->       
+                </div>   
+            </div> 
+        </div>
+        <!-- end-content -->
+        <!-- begin-footer -->
+        <div id="footer">
+            <div class="wrapper">
+                <!-- begin-footer-text -->
+                Чатор © 2018
+                <!-- end-footer-text -->
             </div>
-            <!-- end-all-groups -->
-          </div>
-          <!-- end-left-panel -->
-          <!-- begin-right-panel -->
-          <div id="right-panel">
-            <!-- begin-groups -->
-            <div id="groups">
-              <!-- begin-groups-list -->
-              <div class="group">
-                <div class="info">
-                  <div class="name">
-                    Группа 1
-                  </div>
-                  <div class="theme">
-                    Тема группы
-                  </div>
-                  <div class="participants">
-                    Кол-во участников: <b>10</b>
-                  </div>
-                  <div class="action">
-                    <!-- begin-group-errors -->
-                    <span class="errors">Ошибка доступа. Обновите страницу.</span><br>
-                    <!-- end-group-errors -->
-                    <a class="button" href="#join">Войти</a>
-                  </div>
-                </div>
-                <div class="description">
-                  <label for="text">Описание</label>
-                  <p id="text">
-                    Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Равным образом укрепление и развитие структуры требуют определения и уточнения модели развития. Не следует, однако забывать, что укрепление и развитие структуры способствует подготовки и реализации дальнейших направлений развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
-                  </p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="info">
-                  <div class="name">
-                    Группа 2
-                  </div>
-                  <div class="theme">
-                    Тема группы
-                  </div>
-                  <div class="participants">
-                    Кол-во участников: <b>5</b>
-                  </div>
-                  <div class="action">
-                  <a class="button" href="#join">Войти</a>
-                  </div>
-                </div>
-                <div class="description">
-                  <label for="text">Описание</label>
-                  <p id="text">
-                    С другой стороны начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют от нас анализа существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение соответствующий условий активизации.
-                  </p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="info">
-                  <div class="name">
-                    Группа 3
-                  </div>
-                  <div class="theme">
-                    Тема группы
-                  </div>
-                  <div class="participants">
-                    Кол-во участников: <b>20</b>
-                  </div>
-                  <div class="action">
-                  <a class="button" href="#join">Войти</a>
-                  </div>
-                </div>
-                <div class="description">
-                  <label for="text">Описание</label>
-                  <p id="text">
-                    Товарищи! начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития. Задача организации, в особенности же укрепление и развитие структуры способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения и уточнения модели развития. Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Товарищи! новая модель организационной деятельности в значительной степени обуславливает создание существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.
-                  </p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="info">
-                  <div class="name">
-                    Группа 4
-                  </div>
-                  <div class="theme">
-                    Тема группы
-                  </div>
-                  <div class="participants">
-                    Кол-во участников: <b>35</b>
-                  </div>
-                  <div class="action">
-                  <a class="button" href="#join">Войти</a>
-                  </div>
-                </div>
-                <div class="description">
-                  <label for="text">Описание</label>
-                  <p id="text">
-                    Разнообразный и богатый опыт начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки соответствующий условий активизации. Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Равным образом консультация с широким активом позволяет оценить значение форм развития. Таким образом начало повседневной работы по формированию позиции требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.
-                  </p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="info">
-                  <div class="name">
-                    Группа 5
-                  </div>
-                  <div class="theme">
-                    Тема группы
-                  </div>
-                  <div class="participants">
-                    Кол-во участников: <b>50</b>
-                  </div>
-                  <div class="action">
-                  <a class="button" href="#join">Войти</a>
-                  </div>
-                </div>
-                <div class="description">
-                  <label for="text">Описание</label>
-                  <p id="text">
-                    С другой стороны укрепление и развитие структуры позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.
-                  </p>
-                </div>
-              </div>
-              <div class="group">
-                <div class="info">
-                  <div class="name">
-                    Группа 6
-                  </div>
-                  <div class="theme">
-                    Тема группы
-                  </div>
-                  <div class="participants">
-                    Кол-во участников: <b>100500</b>
-                  </div>
-                  <div class="action">
-                  <a class="button" href="#join">Войти</a>
-                  </div>
-                </div>
-                <div class="description">
-                  <label for="text">Описание</label>
-                  <p id="text">
-                    Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия.
-                  </p>
-                </div>
-              </div> 
-              <!-- end-groups-list -->       
-            </div>
-            <!-- end-groups -->
-            <!-- begin-pagination -->
-      			<div id="pagination">
-              <!-- begin-pagination-links -->
-      				<a href="#">
-      					<span class="arrow fa fa-arrow-left">&#xf060</span>
-      				</a>
-      				<a href="#">
-      					1
-      				</a>
-      				<span>...</span>
-      				<a href="#" class="middle">4</a>
-      				<a href="#" class="middle current">5</a>
-      				<a href="#" class="middle">6</a>
-      				<span>...</span>
-      				<a href="#">9</a>
-      				<a href="#">
-      					<span class="arrow fa fa-arrow-right">&#xf061;</span>
-      				</a>
-              <!-- end-pagination-links -->
-      			</div>
-            <!-- end-pagination -->
-          </div>   
-          <!-- end-right-panel -->       
-        </div>   
-      </div> 
-    </div>
-    <!-- end-content -->
-    <!-- begin-footer -->
-    <div id="footer">
-      <div class="wrapper">
-        <!-- begin-footer-text -->
-        Чатор © 2018
-        <!-- end-footer-text -->
-      </div>
-    </div>
-    <!-- end-footer -->
-  </body>
-  <!-- end-body -->
+        </div>
+        <!-- end-footer -->
+    </body>
+    <!-- end-body -->
 </html>
 <!-- end-html -->
